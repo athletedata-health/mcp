@@ -165,6 +165,8 @@ files["plugin.json"] = json({
   repository: REPO_URL,
   license: "MIT",
   keywords: ["mcp", "fitness", "training", "garmin", "oura", "whoop", "health", "running", "cycling"],
+  // Hermes asks the user before any write tool runs (watch push, food log).
+  extensions: { "com.nousresearch.hermes": { servers: { [NAME]: { trust: "untrusted" } } } },
 });
 
 files["mcp.json"] = json({
