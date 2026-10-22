@@ -1,0 +1,37 @@
+{
+  "name": "athletedata",
+  "version": "1.0.0",
+  "description": "Your Garmin, Oura, WHOOP, Hevy and 35 more fitness apps, queryable from your own AI.",
+  "author": {
+    "name": "athletedata",
+    "email": "team@athletedata.health"
+  },
+  "homepage": "https://www.athletedata.health/mcp?utm_source=cursor&utm_medium=mcp-directory",
+  "repository": "https://github.com/athletedata-health/mcp",
+  "license": "MIT",
+  "logo": "assets/logo.png",
+  "keywords": [
+    "mcp",
+    "fitness",
+    "training",
+    "garmin",
+    "oura",
+    "whoop",
+    "health"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./mcp.json",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "ATHLETEDATA_API_KEY": {
+        "type": "string",
+        "title": "athletedata API key",
+        "description": "Your sk_soma_... key from https://www.athletedata.health/dashboard/mcp"
+      }
+    },
+    "required": [
+      "ATHLETEDATA_API_KEY"
+    ]
+  }
+}

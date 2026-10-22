@@ -1,0 +1,22 @@
+{
+  "name": "athletedata",
+  "version": "1.0.0",
+  "description": "Your Garmin, Oura, WHOOP, Hevy and 35 more fitness apps, queryable from your own AI.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "athletedata": {
+      "httpUrl": "https://mcp.athletedata.health/mcp",
+      "headers": {
+        "Authorization": "Bearer ${ATHLETEDATA_API_KEY}"
+      }
+    }
+  },
+  "settings": [
+    {
+      "name": "athletedata API key",
+      "description": "Your sk_soma_... key from https://www.athletedata.health/dashboard/mcp (no account yet? https://www.athletedata.health/login?ref=mcp&utm_source=gemini-cli&utm_medium=mcp-directory)",
+      "envVar": "ATHLETEDATA_API_KEY",
+      "sensitive": true
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "athletedata": {
+      "type": "streamable-http",
+      "url": "https://mcp.athletedata.health/mcp",
+      "headers": {
+        "Authorization": "Bearer ${ATHLETEDATA_API_KEY}"
+      }
+    }
+  }
+}

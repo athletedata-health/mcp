@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "health.athletedata/mcp",
+  "title": "athletedata",
+  "description": "Your Garmin, Oura, WHOOP, Hevy and 35 more fitness apps, queryable from your own AI.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.athletedata.health/mcp?utm_source=mcp-registry&utm_medium=mcp-directory",
+  "repository": {
+    "url": "https://github.com/athletedata-health/mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://www.athletedata.health/logo-1024.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "1024x1024"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.athletedata.health/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional. Bearer + your athletedata API key (sk_soma_...) from https://www.athletedata.health/dashboard/mcp. Clients that support MCP OAuth can leave this out and sign in instead.",
+          "isRequired": false,
+          "isSecret": true,
+          "placeholder": "Bearer sk_soma_..."
+        }
+      ]
+    }
+  ]
+}
